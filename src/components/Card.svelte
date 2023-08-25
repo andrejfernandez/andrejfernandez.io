@@ -22,22 +22,19 @@
 
 <div bind:this={animatedElement}>
 	{#if isVisible}
-		<div
-			class="card w-96 bg-current shadow-xl mx-5"
-			in:fade={{ duration: 500, delay: delay + 100 }}
-		>
+		<div class="card w-96 shadow-xl mx-5" in:fade={{ duration: 500, delay: delay + 100 }} out:fade>
 			<figure>
 				<img src={cardProps.image} alt="Shoes" />
 			</figure>
-			<div class="card-body text-base-100">
+			<div class="card-body bg-base-300">
 				<h2 class="card-title">
 					{cardProps.title}
 				</h2>
 				<p>{cardProps.description}</p>
 				<div class="card-actions justify-start mt-2">
 					{#each cardProps.tags as tag, index (index)}
-						<div class="badge text-base-100 bg-transparent">
-							#{tag}
+						<div class="badge">
+							{tag}
 						</div>
 					{/each}
 				</div>
