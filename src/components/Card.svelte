@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Service } from '../data/services';
+	import type { Service } from '../lib/types';
 
 	export let cardProps: Service;
 	export let delay: number;
@@ -26,7 +26,7 @@
 			<figure>
 				<img src={cardProps.image} alt="Shoes" />
 			</figure>
-			<div class="card-body bg-base-300">
+			<div class="card-body bg-base-300 h-52">
 				<h2 class="card-title">
 					{cardProps.title}
 				</h2>
@@ -34,7 +34,7 @@
 				<div class="card-actions justify-start mt-2">
 					{#each cardProps.tags as tag, index (index)}
 						<div class="badge">
-							{tag}
+							<a href={tag.url} target="_blank"> {tag.tagName} </a>
 						</div>
 					{/each}
 				</div>
