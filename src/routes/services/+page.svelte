@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from '../../components/Card.svelte';
+	import Card from '$lib/components/ServiceCard.svelte';
 
 	export let data;
 	console.log(data);

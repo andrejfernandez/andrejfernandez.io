@@ -1,6 +1,5 @@
 <script lang="ts">
-	// Animation logic
-	import { fly, slide, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 </script>
 
 <div class="flex items-center justify-center">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Service } from '../lib/types';
+	import type { Service } from '$lib/types';
 	export let cardProps: Service;
 	export let delay: number;
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fly, slide, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 </script>
 
 <form action="" class="flex flex-col w-1/2 mx-auto" in:fade={{ duration: 200, delay: 100 }}>

@@ -1,4 +1,4 @@
-import stockimg from '../../media/stockimg.jpeg';
+import stockimg from '$lib/media/stockimg.jpeg';
 import type { Service } from '$lib/types';
 
 let services: Service[] = [
